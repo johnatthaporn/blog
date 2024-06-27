@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div class="w3-center" style="margin-inline: 630px;" >
+    <div style="background-color: lightpink;
+                height: 876px;">
+{{ form.media }}
+<div class="w3-container">
+    <form action="" method="post">{% csrf_token %}
+        <p>{{ form.title }}</p>
+        <p>{{ form.body }}</p>
+        <p><input type="submit" value="Post"></p>
+        
+    </form>
+</div>
+
+    </div>
+</div>
+{% endblock %}
